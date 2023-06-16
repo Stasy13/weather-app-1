@@ -10,3 +10,6 @@
 .Weather li {
   list-style: none;
 }
+.WeatherForecast {
+  margin: 40px 0;
+}
