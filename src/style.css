@@ -6,3 +6,7 @@
 .form {
   display: block;
 }
+
+.Weather li {
+  list-style: none;
+}
