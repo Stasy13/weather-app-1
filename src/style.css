@@ -5,8 +5,7 @@
 
 .Weather {
   padding: 40px auto;
-  border: 1px solid;
-  border-color: blue;
+  background-color: lightgrey;
   border-radius: 16px;
 }
 
