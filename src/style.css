@@ -4,7 +4,10 @@
 }
 
 .Weather {
-  padding: 40px auto;
+  padding: 40px;
+}
+.Weather {
+  border-radius: 1px solid;
   background-color: lightgrey;
   border-radius: 16px;
 }
