@@ -36,7 +36,7 @@
 .WeatherForecast {
   margin: 40px 0;
 }
-.WeatherForecastDays.forecast-day {
+.forecast-day {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -47,7 +47,7 @@
   margin: 20px auto;
 }
 
-.WeatherForecast.forecast-temperature {
+.forecast-temperature {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
