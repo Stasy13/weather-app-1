@@ -1,3 +1,8 @@
+.App {
+  margin: 60px auto;
+  max-width: 800px;
+}
+
 .Weather form {
   margin-top: 40px;
   padding-bottom: 30px;
@@ -12,4 +17,16 @@
 }
 .WeatherForecast {
   margin: 40px 0;
+}
+
+.WeatherForecast.forecast-temperature {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgb(195, 29, 70);
+}
+.forecast-min-temperature {
+  opacity: 0.6;
+  margin-left: 10px;
 }

@@ -13,142 +13,146 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <div class="Weather">
-        <form>
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city"
-                class="form-control search-input"
-              />
-            </div>
-            <div class="col-3 p-0">
-              <input
-                type="submit"
-                class="btn btn-primary w-100"
-                value="Search"
-              />
-            </div>
-          </div>
-        </form>
-        <div class="WeatherInfo">
-          <div class="row">
-            <div class="col-6">
-              <h1>Broad Oak</h1>
-              <ul>
-                <li>Friday 17:15</li>
-                <li>Partly sunny</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <img
-                src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
-                alt="Partly sunny img"
-              />
-              18℃ | ℉
-            </div>
-
-            <div class="col-md-6">
-              <ul>
-                <li>Humidity: 84%</li>
-                <li>Wind: 9km/h</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="WeatherForecast row">
-            <div class="col">
-              <div class="WeatherForecastDays">
-                <div class="forecast-day">Fri</div>
-                <img
-                  src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
-                  alt="Partly sunny"
-                  width="38"
-                  height="38"
+    <div class="App">
+      <div class="container">
+        <div class="Weather">
+          <form>
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter a city"
+                  class="form-control search-input"
                 />
-                <div class="forecast-temperature">
-                  <span class="forecast-max-temperature">24°</span>
-                  <span class="forecast-min-temperature">14°</span>
-                </div>
+              </div>
+              <div class="col-3 p-0">
+                <input
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  value="Search"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="WeatherInfo">
+            <div class="row">
+              <div class="col-6">
+                <h1>Broad Oak</h1>
+                <ul>
+                  <li>Friday 17:15</li>
+                  <li>Partly sunny</li>
+                </ul>
               </div>
             </div>
 
-            <div class="col">
-              <div class="WeatherForecastDays">
-                <div class="forecast-day">Sat</div>
+            <div class="row">
+              <div class="col-md-6">
                 <img
                   src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
-                  alt="Partly sunny"
-                  width="38"
-                  height="38"
+                  alt="Partly sunny img"
                 />
-                <div class="forecast-temperature">
-                  <span class="forecast-max-temperature">23°</span>
-                  <span class="forecast-min-temperature">14°</span>
-                </div>
+                18℃ | ℉
+              </div>
+
+              <div class="col-md-6">
+                <ul>
+                  <li>Humidity: 84%</li>
+                  <li>Wind: 9km/h</li>
+                </ul>
               </div>
             </div>
 
-            <div class="col">
-              <div class="WeatherForecastDays">
-                <div class="forecast-day">Sun</div>
-                <img
-                  src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/RainShowersDayV2.svg"
-                  alt="Rain"
-                  width="38"
-                  height="38"
-                />
-                <div class="forecast-temperature">
-                  <span class="forecast-max-temperature">24°</span>
-                  <span class="forecast-min-temperature">15°</span>
+            <div class="WeatherForecast row">
+              <div class="col">
+                <div class="WeatherForecastDays">
+                  <div class="forecast-day">Fri</div>
+                  <img
+                    src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
+                    alt="Partly sunny"
+                    width="38"
+                    height="38"
+                  />
+                  <div class="forecast-temperature">
+                    <span class="forecast-max-temperature">24°</span>
+                    <span class="forecast-min-temperature">14°</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="WeatherForecastDays">
-                <div class="forecast-day">Mon</div>
-                <img
-                  src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
-                  alt="Partly sunny"
-                  width="38"
-                  height="38"
-                />
-                <div class="forecast-temperature">
-                  <span class="forecast-max-temperature">23°</span>
-                  <span class="forecast-min-temperature">13°</span>
+              <div class="col">
+                <div class="WeatherForecastDays">
+                  <div class="forecast-day">Sat</div>
+                  <img
+                    src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
+                    alt="Partly sunny"
+                    width="38"
+                    height="38"
+                  />
+                  <div class="forecast-temperature">
+                    <span class="forecast-max-temperature">23°</span>
+                    <span class="forecast-min-temperature">14°</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="WeatherForecastDays">
-                <div class="forecast-day">Thu</div>
-                <img
-                  src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
-                  alt="Partly sunny"
-                  width="38"
-                  height="38"
-                />
-                <div class="forecast-temperature">
-                  <span class="forecast-max-temperature">23°</span>
-                  <span class="forecast-min-temperature">13°</span>
+              <div class="col">
+                <div class="WeatherForecastDays">
+                  <div class="forecast-day">Sun</div>
+                  <img
+                    src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/RainShowersDayV2.svg"
+                    alt="Rain"
+                    width="38"
+                    height="38"
+                  />
+                  <div class="forecast-temperature">
+                    <span class="forecast-max-temperature">24°</span>
+                    <span class="forecast-min-temperature">15°</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="WeatherForecastDays">
+                  <div class="forecast-day">Mon</div>
+                  <img
+                    src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
+                    alt="Partly sunny"
+                    width="38"
+                    height="38"
+                  />
+                  <div class="forecast-temperature">
+                    <span class="forecast-max-temperature">23°</span>
+                    <span class="forecast-min-temperature">13°</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="WeatherForecastDays">
+                  <div class="forecast-day">Thu</div>
+                  <img
+                    src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
+                    alt="Partly sunny"
+                    width="38"
+                    height="38"
+                  />
+                  <div class="forecast-temperature">
+                    <span class="forecast-max-temperature">23°</span>
+                    <span class="forecast-min-temperature">13°</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <footer>
-        <a href="https://github.com/Stasy13/weather-app-1">Open-source code</a>
-        ,by Nastya Malkina
-      </footer>
+        <footer>
+          <a href="https://github.com/Stasy13/weather-app-1"
+            >Open-source code</a
+          >
+          ,by Nastya Malkina
+        </footer>
+      </div>
     </div>
 
     <script src="index.js"></script>
