@@ -79,7 +79,7 @@ footer {
   margin-left: 10px;
 }
 
-.WeatherInfo.currentTemperature {
+.currentTemperature {
   font-size: 30px;
 }
 .units {
