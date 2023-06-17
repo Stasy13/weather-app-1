@@ -3,6 +3,12 @@
   max-width: 800px;
 }
 
+.Weather {
+  border: 1px solid;
+  border-color: blue;
+  border-radius: 16px;
+}
+
 .Weather form {
   margin-top: 40px;
   padding-bottom: 30px;
@@ -20,11 +26,11 @@
 }
 
 .WeatherForecast.forecast-temperature {
+  color: rgb(195, 29, 70);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.5;
-  color: rgb(195, 29, 70);
 }
 .forecast-min-temperature {
   opacity: 0.6;
