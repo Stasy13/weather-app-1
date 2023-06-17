@@ -7,6 +7,7 @@
   border: 1px solid;
   border-color: blue;
   border-radius: 16px;
+  padding: 40px;
 }
 
 .Weather form {
@@ -26,7 +27,7 @@
 }
 
 .WeatherForecast.forecast-temperature {
-  color: rgb(195, 29, 70);
+  color: rgba(143, 16, 16, 0.979);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
