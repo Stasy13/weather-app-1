@@ -5,6 +5,10 @@ body {
 h1 {
   margin-bottom: 0;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 footer {
   font-size: 14px;
@@ -75,6 +79,10 @@ footer {
   margin-left: 10px;
 }
 
-.currentTemperature {
+.WeatherInfo.currentTemperature {
   font-size: 30px;
+}
+.units {
+  position: relative;
+  font-size: 16px;
 }
