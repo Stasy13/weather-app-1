@@ -4,10 +4,10 @@
 }
 
 .Weather {
+  padding: 40px auto;
   border: 1px solid;
   border-color: blue;
   border-radius: 16px;
-  padding: 40px 0;
 }
 
 .Weather form {
