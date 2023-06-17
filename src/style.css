@@ -68,3 +68,6 @@ footer {
   margin-top: 40px;
   text-align: center;
 }
+.currentTemperature {
+  font-size: 700;
+}
