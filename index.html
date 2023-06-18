@@ -38,10 +38,10 @@
           <div class="WeatherInfo">
             <div class="row">
               <div class="col-6">
-                <h1>Broad Oak</h1>
+                <h1 id="city"></h1>
                 <ul>
-                  <li>Friday 17:15</li>
-                  <li>Partly sunny</li>
+                  <li id="date"></li>
+                  <li id="description"></li>
                 </ul>
               </div>
             </div>
@@ -53,15 +53,15 @@
                     src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/D200PartlySunnyV2.svg"
                     alt="Partly sunny img"
                   />
-                  <strong class="currentTemperature">18 </strong>
+                  <strong class="currentTemperature" id="temperature"> </strong>
                   <span class="units">℃</span>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <ul>
-                  <li>Humidity: <strong>84%</strong></li>
-                  <li>Wind: <strong>9km/h</strong></li>
+                  <li>Humidity: <strong id="humidity"></strong>%</li>
+                  <li>Wind: <strong id="wind"></strong>km/h</li>
                 </ul>
               </div>
             </div>
@@ -159,6 +159,6 @@
       </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
