@@ -28,6 +28,7 @@ function displayTemperature(responce) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = Math.round(responce.data.temperature.current);
   cityElement.innerHTML = responce.data.city;
@@ -35,6 +36,8 @@ function displayTemperature(responce) {
   humidityElement.innerHTML = responce.data.temperature.humidity;
   windElement.innerHTML = Math.round(responce.data.wind.speed);
   dateElement.innerHTML = formatDate(responce.data.time * 1000);
+  iconElement.setAttribute("src", responce.data.condition.icon_url);
+  iconElement.setAttribute("alt", responce.data.condition.description);
 }
 
 let apiKey = "oe4a80734b0b63307f116671db02tf0c";
