@@ -30,7 +30,9 @@ function displayTemperature(responce) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  temperatureElement.innerHTML = Math.round(responce.data.temperature.current);
+  celsiusTemperature = responce.data.temperature.current;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = responce.data.city;
   descriptionElement.innerHTML = responce.data.condition.description;
   humidityElement.innerHTML = responce.data.temperature.humidity;
@@ -40,17 +42,46 @@ function displayTemperature(responce) {
   iconElement.setAttribute("alt", responce.data.condition.description);
 }
 
-function search(event) {
-  event.preventDefault();
-  let cityInputElement = document.querySelector("#city-input");
-  console.log(cityInputElement.value);
+function search(city) {
+  let apiKey = "oe4a80734b0b63307f116671db02tf0c";
+
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
 }
 
-let apiKey = "oe4a80734b0b63307f116671db02tf0c";
-let apiUrl =
-  "https://api.shecodes.io/weather/v1/current?query=Hastings&key=oe4a80734b0b63307f116671db02tf0c&units=metric";
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", search);
+form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+search("Hastings");
