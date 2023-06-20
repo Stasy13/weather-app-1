@@ -36,7 +36,7 @@ function displayTemperature(responce) {
   cityElement.innerHTML = responce.data.city;
   descriptionElement.innerHTML = responce.data.condition.description;
   humidityElement.innerHTML = responce.data.temperature.humidity;
-  windElement.innerHTML = Math.round(responce.data.wind.speed);
+  windElement.innerHTML = Math.round(responce.data.wind.speed * 3.6);
   dateElement.innerHTML = formatDate(responce.data.time * 1000);
   iconElement.setAttribute("src", responce.data.condition.icon_url);
   iconElement.setAttribute("alt", responce.data.condition.description);
