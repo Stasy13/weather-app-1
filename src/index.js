@@ -49,6 +49,14 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "oe4a80734b0b63307f116671db02tf0c";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayTemperature(responce) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -68,6 +76,8 @@ function displayTemperature(responce) {
   dateElement.innerHTML = formatDate(responce.data.time * 1000);
   iconElement.setAttribute("src", responce.data.condition.icon_url);
   iconElement.setAttribute("alt", responce.data.condition.description);
+
+  getForecast(responce.data.coordinates);
 }
 
 function search(city) {
@@ -113,4 +123,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Hastings");
-displayForecast();
