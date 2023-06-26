@@ -47,7 +47,7 @@ function displayForecast(responce) {
         forecastDay.condition.icon
       }.png"
       alt="Partly sunny"
-      width="42"
+      width="62"
       
     />
      <div class="forecast-temperature">
