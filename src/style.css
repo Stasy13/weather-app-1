@@ -1,24 +1,36 @@
 body {
   background-color: aliceblue;
+  font-family: arial, sans-serif;
 }
 
 h1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
   margin-bottom: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
+.Weather li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 5px;
+  list-style: none;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.Weather li strong {
+  color: rgba(230, 41, 41, 0.607);
+  font-weight: 400;
+}
+
 li::first-letter {
   text-transform: capitalize;
 }
-footer {
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: 40px;
-  text-align: center;
-}
-
 .App {
   margin: 60px auto;
   max-width: 800px;
@@ -41,22 +53,19 @@ footer {
 .form {
   display: block;
 }
+.WeatherInfo {
+  margin-bottom: 20px;
+}
 
-.Weather li {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 5px;
-  list-style: none;
-  color: rgba(39, 33, 66, 0.4);
-}
-.Weather li strong {
-  color: rgba(230, 41, 41, 0.607);
-  font-weight: 400;
-}
 .WeatherForecast {
   margin: 20px 0;
   text-align: center;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 84px;
+  width: 84px;
 }
 .forecast-day {
   font-size: 16px;
@@ -98,4 +107,11 @@ footer {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 40px;
+  text-align: center;
 }
